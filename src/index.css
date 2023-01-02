@@ -1,0 +1,80 @@
+ @import url('https://fonts.googleapis.com/css2?family=Prompt'); 
+ @import url('https://fonts.googleapis.com/css2?family=Lobster'); 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto'); 
+body{
+    font-family: 'Oswald' light;
+    background-color: #9b59b6;
+}
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 5rem 25%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.box{
+    display: flex;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 5px rgb(0,0,0);
+    border-radius: 4px;
+    margin: 10px;
+    font-size: 60px;
+    background-color: #8e44ad;
+    cursor: pointer;
+    color: wheat;
+    font-family: Prompt;
+}
+.box.active{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+h1{
+    font-size:4em;
+    text-shadow: #333;
+    text-align: center;
+    font-family: lobster;
+    color: blanchedalmond;
+}
+p{
+    font-size:1.5em;
+    text-shadow: #333;
+    text-align: center;
+    font-family: Roboto italic;
+    font-weight: 800;
+    color:#1a011d;
+    margin: 0.1em 5%;
+}
+@media (max-width: 700px){
+      .display{
+        margin: 3rem 1%;
+        }
+        .box{
+            width: 5em;
+            height: 5em;
+        }
+}
+@media (min-width: 750px){
+    .display{
+      margin: 3rem 10%;
+      }
+      .box{
+        width: 3em;
+        height: 3em;
+        margin: 10px;
+    }
+}
+
